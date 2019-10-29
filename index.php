@@ -78,10 +78,7 @@ if (isset($_GET['DOCUMENT_ID']) && !empty($_GET['DOCUMENT_ID'])) {
     <p><strong>Номер документа:</strong> <?= $items[0]['PROPERTY_NUMBER_VALUE'] ?></p>
     <p><strong>Дата публикации документа:</strong> <?= $items[0]['PROPERTY_PUBLIC_DATE_VALUE'] ?></p>
     <div id="files"></div>
-<?php foreach ($arFiles as $File) {?>
-            <!-- <p><button class="ui-btn ui-btn-primary"><?=$File['NAME']?></button></p> -->
-    <?php }
-        }
+<?php }
 }?>
     
 <script>
